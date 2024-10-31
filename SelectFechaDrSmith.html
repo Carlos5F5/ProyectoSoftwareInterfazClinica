@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose a time</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .close-icon {
+            font-size: 24px;
+        }
+        h1, h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .calendar {
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+        .calendar-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 5px;
+        }
+        .calendar-day {
+            text-align: center;
+            padding: 10px;
+        }
+        .calendar-day.active {
+            background-color: #007bff;
+            color: white;
+            border-radius: 50%;
+        }
+        .time-slots {
+            margin-top: 20px;
+        }
+        .time-slot {
+            background-color: #f0f0f0;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .doctor-info {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .doctor-image {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .doctor-name {
+            font-weight: bold;
+        }
+        .doctor-specialty {
+            color: #666;
+        }
+        .button {
+            background-color: #007bff;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            border: none;
+            font-size: 16px;
+            width: 100%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Choose a time</h1>
+        <a href="horariosDrsDisponibles.html"><span class="close-icon">×</span></a>
+    </div>
+    <h2>Select a date</h2>
+    <div class="calendar">
+        <div class="calendar-header">
+            <span>‹</span>
+            <h2>August 2023</h2>
+            <span>›</span>
+        </div>
+        <div class="calendar-grid">
+            <div class="calendar-day">S</div>
+            <div class="calendar-day">M</div>
+            <div class="calendar-day">T</div>
+            <div class="calendar-day">W</div>
+            <div class="calendar-day">T</div>
+            <div class="calendar-day">F</div>
+            <div class="calendar-day">S</div>
+            <div class="calendar-day"></div>
+            <div class="calendar-day"></div>
+            <div class="calendar-day">1</div>
+            <div class="calendar-day">2</div>
+            <div class="calendar-day">3</div>
+            <div class="calendar-day">4</div>
+            <div class="calendar-day active">5</div>
+            <!-- Add more days as needed -->
+        </div>
+    </div>
+    <h2>Select a time</h2>
+    <div class="time-slots">
+        <div class="time-slot">
+            <span>10:00 AM</span>
+            <span>Today</span>
+            <span>Thursday</span>
+        </div>
+        <div class="time-slot">
+            <span>10:30 AM</span>
+            <span>Tomorrow</span>
+            <span>Friday</span>
+        </div>
+        <div class="time-slot">
+            <span>11:00 AM</span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div class="doctor-info">
+        <img src="/placeholder.svg" alt="Dr. John Smith" class="doctor-image">
+        <div>
+            <div class="doctor-name">Dr. John Smith</div>
+            <div class="doctor-specialty">Nephrologist</div>
+        </div>
+    </div>
+    <button class="button">Continue</button>
+</body>
+</html>

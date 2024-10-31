@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose a doctor to see</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .back-arrow {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .doctor {
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        .doctor-image {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+        .doctor-info {
+            flex-grow: 1;
+        }
+        .doctor-name {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .doctor-availability {
+            color: #666;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .button {
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .button-primary {
+            background-color: #007bff;
+            color: white;
+        }
+        .button-secondary {
+            background-color: #f8f9fa;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="Epecialidades.html"><svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+            <path d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z"></path>
+          </svg></a>
+    </div>
+    <h1>Escoge el doctor a ver</h1>
+    <div class="doctor">
+        <img src="/placeholder.svg" alt="Dr. Alex" class="doctor-image">
+        <a href="ProfileDrOchoa.html"><div class="doctor-info">
+            <div class="doctor-name">Dr. Alex</div>
+            <div class="doctor-availability">Available tomorrow, 9:00 AM</div>
+        </div></a>
+    </div>
+    <div class="doctor">
+        <img src="/placeholder.svg" alt="Dr. Sophia" class="doctor-image">
+       <a href="DrFerCalendar.html"> <div class="doctor-info">
+        <div class="doctor-name">Dr. Sophia</div>
+        <div class="doctor-availability">Available tomorrow, 10:30 AM</div>
+    </div></a>
+    </div>
+  
+</body>
+</html>

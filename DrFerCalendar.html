@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Fernando Soto - Cardiología</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin:  0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .back-arrow {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .specialty {
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .rating {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .stars {
+            color: gold;
+            margin-right: 10px;
+        }
+        .review-count {
+            color: #666;
+        }
+        .location {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .location-icon {
+            margin-right: 10px;
+        }
+        .calendar {
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+        .calendar-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 5px;
+        }
+        .calendar-day {
+            text-align: center;
+            padding: 10px;
+        }
+        .calendar-day.active {
+            background-color: #007bff;
+            color: white;
+            border-radius: 50%;
+        }
+        .time-slots {
+            margin-top: 20px;
+        }
+        .time-slot {
+            background-color: #f0f0f0;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .button {
+            background-color: #007bff;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            border: none;
+            font-size: 16px;
+            width: 100%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="ChooseDrr.html"><svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+            <path d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z"></path>
+          </svg></a>
+    </div>
+    <h1>Dr. Sophia</h1>
+    <div class="specialty">Cardiología</div>
+    <div class="rating">
+        <div class="stars">★★★★★</div>
+        <span>4.8</span>
+        <span class="review-count">(1,200 reviews)</span>
+    </div>
+    <div class="location">
+        <span class="location-icon">📍</span>
+        <span>Clínica San Felipe - Cardiología</span>
+    </div>
+    <div class="calendar">
+        <div class="calendar-header">
+            <span>‹</span>
+            <h2>January 2023</h2>
+            <span>›</span>
+        </div>
+        <div class="calendar-grid">
+            <div class="calendar-day">S</div>
+            <div class="calendar-day">M</div>
+            <div class="calendar-day">T</div>
+            <div class="calendar-day">W</div>
+            <div class="calendar-day">T</div>
+            <div class="calendar-day">F</div>
+            <div class="calendar-day">S</div>
+            <div class="calendar-day">1</div>
+            <div class="calendar-day">2</div>
+            <div class="calendar-day">3</div>
+            <div class="calendar-day">4</div>
+            <div class="calendar-day active">5</div>
+            <div class="calendar-day">6</div>
+            <div class="calendar-day">7</div>
+            <!-- Add more days as needed -->
+        </div>
+    </div>
+    <div class="time-slots">
+        <div class="time-slot">9:00 AM</div>
+        <div class="time-slot">9:30 AM</div>
+        <div class="time-slot">10:00 AM</div>
+    </div>
+    <button class="button">Solicitar turno</button>
+</body>
+</html>

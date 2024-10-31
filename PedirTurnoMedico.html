@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedir turno con médico clínico</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .back-arrow {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .option {
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .option-icon {
+            font-size: 24px;
+            margin-right: 15px;
+        }
+        .option-info {
+            flex-grow: 1;
+        }
+        .option-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .option-description {
+            color: #666;
+            font-size: 14px;
+        }
+        .arrow-right {
+            font-size: 24px;
+        }
+        .doctor {
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        .doctor-image {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+        .doctor-info {
+            flex-grow: 1;
+        }
+        .doctor-name {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .doctor-clinic {
+            color: #666;
+        }
+        .time-slot {
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .button {
+            background-color: #007bff;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            border: none;
+            font-size: 16px;
+            width: 100%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="Epecialidades.html"><svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+            <path d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z"></path>
+          </svg></a>
+        <h1>Pedir turno con médico clínico</h1>
+    </div>
+    <h2>Motivo de consulta</h2>
+    <div class="option">
+        <span class="option-icon">📋</span>
+        <div class="option-info">
+            <div class="option-title">Consulta general</div>
+            <div class="option-description">45 minutos</div>
+        </div>
+        <span class="arrow-right">›</span>
+    </div>
+    <div class="option">
+        <span class="option-icon">💉</span>
+        <div class="option-info">
+            <div class="option-title">Vacunas para niños</div>
+            <div class="option-description">20 minutos</div>
+        </div>
+        <span class="arrow-right">›</span>
+    </div>
+    <div class="option">
+        <span class="option-icon">💉</span>
+        <div class="option-info">
+            <div class="option-title">Vacunas para adultos</div>
+            <div class="option-description">20 minutos</div>
+        </div>
+        <span class="arrow-right">›</span>
+    </div>
+    <h2>Disponibilidad</h2>
+    <div class="doctor">
+        <img src="/placeholder.svg" alt="Dr. Debra Teller" class="doctor-image">
+        <div class="doctor-info">
+            <div class="doctor-name">Dr. Debra Teller</div>
+            <div class="doctor-clinic">Clínica de San Francisco</div>
+        </div>
+    </div>
+    <div class="time-slot">
+        <span>Lunes, 12 de marzo a las 8:00pm</span>
+        <span>›</span>
+    </div>
+    <div class="time-slot">
+        <span>Martes, 13 de marzo a las 9:00pm</span>
+        <span>›</span>
+    </div>
+    <button class="button">Confirmar turno</button>
+</body>
+</html>

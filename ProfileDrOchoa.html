@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Maria Ochoa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .back-arrow {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+        .close-icon {
+            font-size: 24px;
+            margin-left: auto;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .rating {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .stars {
+            color: gold;
+            margin-right: 10px;
+        }
+        .review-count {
+            color: #666;
+        }
+        .rating-bars {
+            margin-bottom: 20px;
+        }
+        .rating-bar {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+        .bar-label {
+            margin-right: 10px;
+        }
+        .bar {
+            background-color: #e0e0e0;
+            height: 10px;
+            flex-grow: 1;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .bar-fill {
+            background-color: #4CAF50;
+            height: 100%;
+        }
+        .time-selection {
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+        .time-selection h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .date {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .time-slots {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .time-slot {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .button {
+            background-color: #007bff;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            border: none;
+            font-size: 16px;
+            width: 100%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="ChooseDrr.html"><svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+            <path d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z"></path>
+          </svg></a>
+        <span class="close-icon">×</span>
+    </div>
+    <h1>Dr. Alex</h1>
+    <div class="rating">
+        <div class="stars">★★★★☆</div>
+        <span>4.5</span>
+        <span class="review-count">(100 reviews)</span>
+    </div>
+    <div class="rating-bars">
+        <div class="rating-bar">
+            <span class="bar-label">5</span>
+            <div class="bar"><div class="bar-fill" style="width: 70%;"></div></div>
+            <span>70%</span>
+        </div>
+        <div class="rating-bar">
+            <span class="bar-label">4</span>
+            <div class="bar"><div class="bar-fill" style="width: 20%;"></div></div>
+            <span>20%</span>
+        </div>
+        <div class="rating-bar">
+            <span class="bar-label">3</span>
+            <div class="bar"><div class="bar-fill" style="width: 5%;"></div></div>
+            <span>5%</span>
+        </div>
+        <div class="rating-bar">
+            <span class="bar-label">2</span>
+            <div class="bar"><div class="bar-fill" style="width: 3%;"></div></div>
+            <span>3%</span>
+        </div>
+        <div class="rating-bar">
+            <span class="bar-label">1</span>
+            <div class="bar"><div class="bar-fill" style="width: 2%;"></div></div>
+            <span>2%</span>
+        </div>
+    </div>
+    <div class="time-selection">
+        <h2>Select a time</h2>
+        <div class="date">
+            <span>Thursday, Jan 6</span>
+            <span>›</span>
+        </div>
+        <div class="time-slots">
+            <div class="time-slot">7:30 AM</div>
+            <div class="time-slot">8:00 AM</div>
+            <div class="time-slot">8:30 AM</div>
+        </div>
+    </div>
+    <button class="button">Continue</button>
+</body>
+</html>

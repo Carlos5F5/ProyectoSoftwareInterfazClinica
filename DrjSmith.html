@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. John Smith</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .back-arrow {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .stats {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .stat {
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            flex: 1;
+            margin: 0 5px;
+        }
+        .stat-value {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .stat-label {
+            color: #666;
+            font-size: 14px;
+        }
+        .availability {
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+        .availability h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .date {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .button {
+            background-color: #007bff;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            border: none;
+            font-size: 16px;
+            width: 100%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="horariosDrsDisponibles.html"><span class="back-arrow">←</span></a>
+    </div>
+    <h1>Dr. John Smith</h1>
+    <div class="stats">
+        <div class="stat">
+            <div class="stat-value">4.8</div>
+            <div class="stat-label">Rating</div>
+        </div>
+        <div class="stat">
+            <div class="stat-value">90%</div>
+            <div class="stat-label">Respuesta rápida</div>
+        </div>
+        <div class="stat">
+            <div class="stat-value">$150</div>
+            <div class="stat-label">Consulta</div>
+        </div>
+    </div>
+    <div class="availability">
+        <h2>Disponibilidad</h2>
+        <div class="date">
+            <span>Lunes</span>
+            <span>15 de enero</span>
+            <span>10:00 AM</span>
+        </div>
+        <div class="date">
+            <span>Martes</span>
+            <span>16 de enero</span>
+            <span>11:00 AM</span>
+        </div>
+        <div class="date">
+            <span>Miércoles</span>
+            <span>17 de enero</span>
+            <span>12:00 PM</span>
+        </div>
+    </div>
+   <a href="SelectFechaDrSmith.html"> <button class="button">Programar una cita</button></a>
+</body>
+</html>
